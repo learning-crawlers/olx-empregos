@@ -66,7 +66,7 @@ def get_dados_emprego(url):
 
 
 lista_links = []
-for page in range(1,5):
+for page in range(1,10):
 	# sp.olx.com.br Busca em São Paulo
 	# o={} Paginação
 	result = requests.get('https://sp.olx.com.br/vagas-de-emprego?o={}'.format(page))
