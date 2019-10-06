@@ -2,7 +2,7 @@
 ##  Empregos OLX SP
 ##    Busca de empregos no olx com titulo, anunciante, contato e descrição
 ##
-##    Author: Alex Benincasa Santos alexbenincasa@ymail.com
+##    Author: Alex Benincasa Santos 
 ##    Mail: alexbenincasa@ymail.com
 ##    2019
 #######################################
