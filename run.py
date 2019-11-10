@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #######################################
 ##  Empregos OLX SP
 ##    Busca de empregos no olx com titulo, anunciante, contato e descrição
@@ -7,7 +8,6 @@
 ##    2019
 #######################################
 
-import os
 import re
 import time
 import requests
@@ -15,8 +15,8 @@ from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.common.by import By as by
 from selenium.webdriver.support.ui import WebDriverWait
-from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor,as_completed
+from bs4 import BeautifulSoup
 
 # caminho para o binário do geckodriver.exe
 bin_path = 'C:\\www\\olx-empregos\\geckodriver.exe'

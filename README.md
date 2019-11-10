@@ -13,7 +13,7 @@ pip install requests beautifulsoup4 selenium futures
 Procure o path do python instalado no Windows:
 
 ```
-/mnt/c/Users/alexb/AppData/Local/Programs/Python/Python37-32/python.exe buscar.py
+/mnt/c/Users/alexb/AppData/Local/Programs/Python/Python37-32/python.exe run.py
 ```
 
 ## Resultado
