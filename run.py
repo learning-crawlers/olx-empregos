@@ -92,13 +92,14 @@ def salvarVaga(url):
 		# print(f'[{titulo}] anunciante')
 
 		vaga = {}
-		vaga['Url'] = url.strip()
-		vaga['Titulo'] = titulo.strip()
-		vaga['Anunciante'] = anunciante.strip()
-		vaga['Contato'] = contato
-		vaga['Descricao'] = descricao.strip()
-		vaga['Local'] = ''
-		vaga['Data'] = data_published
+		vaga['fonte'] = 'OLX Empregos'
+		vaga['url'] = url.strip()
+		vaga['titulo'] = titulo.strip()
+		vaga['anunciante'] = anunciante.strip()
+		vaga['contato'] = contato
+		vaga['descricao'] = descricao.strip()
+		vaga['local'] = ''
+		vaga['data'] = data_published
 
 		local = None
 		has_municipio = False
@@ -113,20 +114,20 @@ def salvarVaga(url):
 				continue
 
 			if has_municipio:
-				vaga['Local'] = info.text.strip()
+				vaga['local'] = info.text.strip()
 				has_municipio = False
-				local = vaga['Local']
+				local = vaga['local']
 
 			if has_bairro:
 				bairro = info.text.strip()
 				if local:
-					vaga['Local'] += ' - '+bairro
+					vaga['local'] += ' - '+bairro
 				elif bairro:
-					vaga['Local'] = bairro
+					vaga['local'] = bairro
 
 				has_bairro = False
 
-		anuncio = vaga['Titulo']+vaga['Anunciante']+vaga['Local']
+		anuncio = vaga['titulo']+vaga['anunciante']+vaga['local']
 
 		browser.quit()
 
