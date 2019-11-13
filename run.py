@@ -30,7 +30,7 @@ bin_path = 'C:\\www\\olx-empregos\\geckodriver.exe'
 def salvarVaga(url):
 	try:
 		options = Options()
-		#options.headless = True
+		options.headless = True
 		
 		browser = webdriver.Firefox(executable_path=bin_path, options=options)
 		wait = WebDriverWait(browser, 15)
