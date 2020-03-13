@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.com/learning-crawlers/olx-empregos.svg)](http://hits.dwyl.com/learning-crawlers/olx-empregos)
+
 # OLX Empregos
 
 Extração de dados com Beautiful Soup + Selenium para encontrar empregos no OLX
